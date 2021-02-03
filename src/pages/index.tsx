@@ -46,7 +46,7 @@ export default function Home() {
               title="localhand"
               summary="Assist small businesses."
               icon={<RiHandHeartLine size={25} />}
-              link="https://localhand.vercel.app/"
+              link="https://github.com/ArthurWHenry/localhand"
             />
             <Project
               title="TutorCloud"
