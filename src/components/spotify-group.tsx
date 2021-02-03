@@ -11,7 +11,7 @@ type Props = {
 
 function SpotifyGroup({ title, text, art, link }: Props) {
   return (
-    <div className="flex justify-between items-center bg-gray-50 rounded-md w-80 p-6 m-1">
+    <div className="flex justify-between items-center bg-gray-50 rounded-md w-80 md:w-96 p-6 m-1">
       <div className="flex items-center">
         <Image
           src={art.url}
