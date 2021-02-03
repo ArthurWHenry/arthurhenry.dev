@@ -6,22 +6,19 @@ const Footer = () => {
       <div className="flex justify-around items-center text-gray-50 w-32">
         <a
           href="https://github.com/ArthurWHenry"
-          target="_blank"
-          rel="noopenner noreferrer"
+          className="transition ease-in-out duration-150 text-gray-50 hover:text-gray-300"
         >
           <FiGithub size={25} />
         </a>
         <a
           href="https://www.linkedin.com/in/arthur-henry-0458a1104/"
-          target="_blank"
-          rel="noopenner noreferrer"
+          className="transition ease-in-out duration-150 text-gray-50 hover:text-gray-300"
         >
           <FiLinkedin size={25} />
         </a>
         <a
           href="https://twitter.com/arthurwhenry"
-          target="_blank"
-          rel="noopenner noreferrer"
+          className="transition ease-in-out duration-150 text-gray-50 hover:text-gray-300"
         >
           <FiTwitter size={25} />
         </a>

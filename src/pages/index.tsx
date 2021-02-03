@@ -1,4 +1,3 @@
-// import Head from 'next/head';
 import { MdAttachMoney } from 'react-icons/md';
 import { VscOrganization } from 'react-icons/vsc';
 import { RiHandHeartLine } from 'react-icons/ri';
@@ -8,17 +7,12 @@ import { GiBrickWall } from 'react-icons/gi';
 
 import Layout from '@/components/layout';
 import Project from '@/components/project';
-import React from 'react';
 
 export default function Home() {
   return (
     <Layout>
-      {/* <Head>
-        <title>Arthur Henry</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head> */}
       <div className="max-w-xl mx-auto p-6">
-        <div className="flex flex-col justify-center items-center h-64 w-full">
+        <div className="flex flex-col justify-center items-center h-52 w-full">
           <span className="font-bold text-4xl text-gray-50 mb-2">
             Hello, I'm Arthur
           </span>
