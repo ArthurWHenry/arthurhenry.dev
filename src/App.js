@@ -10,7 +10,7 @@ const projects = [
   {
     name: 'Streats',
     description: 'Find your favorite food truck.',
-    link: '',
+    link: 'https://www.gostreats.com/',
   },
   {
     name: 'Theta Tau',
