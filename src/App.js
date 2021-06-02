@@ -15,7 +15,7 @@ const projects = [
   {
     name: 'Theta Tau',
     description: 'Rho Gamma Chapter of Theta Tau website.',
-    link: 'https://thetataupg.org/"',
+    link: 'https://thetataupg.org/',
   },
   {
     name: 'localhand',
