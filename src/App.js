@@ -1,8 +1,11 @@
+import { Router } from '@reach/router';
+import Home from 'pages/Home';
+
 function App() {
   return (
-    <div className="flex justify-center items-center h-screen">
-      arthurhenry.dev
-    </div>
+    <Router>
+      <Home path="/" />
+    </Router>
   );
 }
 
