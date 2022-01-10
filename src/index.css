@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
+
+.nav-link {
+  @apply font-semibold text-sm text-gray-500 transition duration-150 ease-linear hover:text-gray-700;
+}
+
 @tailwind utilities;
