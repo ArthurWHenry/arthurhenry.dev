@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Pages
 import About from './pages/about';
@@ -12,7 +12,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/projects" element={<Projects />} />
-        <Route path="/blog" element={<Blog />} />
+        {/* <Route path="/blog" element={<Blog />} /> */}
         <Route path="/about" element={<About />} />
         <Route default path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
