@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+
 @tailwind base;
 @tailwind components;
+
+* {
+  font-family: 'Source Sans 3', sans-serif;
+  @apply text-gray-900;
+}
 
 .nav-link {
   @apply font-semibold text-sm text-gray-500 transition duration-150 ease-linear hover:text-gray-700;
