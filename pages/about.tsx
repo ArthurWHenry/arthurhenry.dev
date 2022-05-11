@@ -9,7 +9,7 @@ const About: NextPage = () => {
   return (
     <Layout>
       <Header pageTitle="About Me" />
-      <div className="flex flex-col items-center space-y-4 py-4 px-4 text-center leading-loose tracking-wide sm:px-2 sm:text-left">
+      <div className="flex flex-col items-center space-y-4 py-4 px-4 text-center leading-loose tracking-normal sm:px-2 sm:text-left">
         <div className="flex flex-col items-center justify-center">
           <div className="h-64 w-64">
             <Image
