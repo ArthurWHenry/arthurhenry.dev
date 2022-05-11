@@ -22,7 +22,7 @@ export const projects = [
   {
     name: "LEGO305",
     description: "Envisioning a new Miami through Lego Bricks.",
-    link: "testing",
+    link: "https://www.youtube.com/watch?v=b8VYoZhTU6c&t=72s",
     altText: "LEG305 - A project led by Miami-Dade College students.",
   },
   {

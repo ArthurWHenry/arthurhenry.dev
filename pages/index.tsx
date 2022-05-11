@@ -42,7 +42,7 @@ const Home: NextPage = () => {
         <span className="text-lg font-semibold">I&apos;m Arthur Henry.</span>
         <p>Currently a Software Engineer at Nielsen.</p>
         <Link href="/about">
-          <a className="mt-2 border-b border-gray-300 text-sm font-semibold">
+          <a className="mt-2 border-b border-gray-300 text-sm font-semibold text-gray-900 transition duration-150 ease-linear hover:text-gray-500">
             Read more about me here
           </a>
         </Link>
