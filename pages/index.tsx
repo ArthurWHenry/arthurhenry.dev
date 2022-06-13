@@ -1,13 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import Card from "../components/card/component";
 
 // Components
 import Layout from "../components/layout/component";
-
-// Styles
-import styles from "../styles/Home.module.css";
 
 // Images
 import Landscape from "../assets/images/Landscape.jpg";

@@ -1,16 +1,54 @@
 import { NextPage } from "next";
+import useSWR from "swr";
 import Image from "next/image";
+
+// Components
+import Header from "../components/header/component";
 import Layout from "../components/layout/component";
 
+// Images
 import Portrait from "../assets/images/Portrait.jpg";
-import Header from "../components/header/component";
+
+// Helpers
+import fetcher from "../lib/fetcher";
+import { useEffect } from "react";
+import { getTopArtistsTracks } from "../lib/spotify";
+
+type Art = {
+  height: number;
+  url: string;
+  width: number;
+};
+
+type Track = {
+  id: string;
+  title: string;
+  trackUrl: string;
+  artist: string;
+  art: Art;
+};
+
+type Artist = {
+  id: string;
+  title: string;
+  artistUrl: string;
+  art: Art;
+  genre: string;
+};
+
+const { SPOTIFY_CLIENT_ID } = process.env;
 
 const About: NextPage = () => {
+  const { data: tracks, error } = useSWR("/api/top-tracks", fetcher);
+  // const { data: artists } = useSWR("/api/top-artists", fetcher);
+  // console.log(tracks);
+  console.log(tracks);
+
   return (
     <Layout>
       <Header pageTitle="About Me" />
-      <div className="flex flex-col items-center space-y-4 py-4 px-4 text-center leading-loose tracking-normal sm:px-2 sm:text-left">
-        <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center py-4 px-4 sm:px-2">
+        <div className="mb-4 flex flex-col items-center justify-center">
           <div className="h-64 w-64">
             <Image
               src={Portrait}
@@ -24,29 +62,35 @@ const About: NextPage = () => {
             Graduation photo, May 2021
           </span>
         </div>
-        <p>
-          I&apos;m a Software Engineer based out in Maitland, Florida. I first
-          got into coding back in high school while taking a web design course.
-        </p>
-        <p>
-          I primarily use JavaScript, TypeScript, CSS, and a little bit of SQL
-          through work and projects. As of right now, the framework I&apos;ve
-          been using is React–along with TailwindCSS, to make applications look
-          inviting.
-        </p>
-        <p>
-          I&apos;ve always had an appreciation for web development and the
-          endless amount of creativity you can put into it. Soon this passion
-          grew into developing and designing applications. It&apos;s always been
-          a space for me to explore that creativity while still being technical.
-        </p>
-        <p>
-          I have a few hobbies. The main one is DJ&apos;ing, which has allowed
-          me to release negative energy and replace it with more positive
-          ones–music has always been my escape from reality. Lately, I&apos;ve
-          also dedicated some time to learning French in hopes of visiting
-          France in the near future.
-        </p>
+        <div className="space-y-4 text-center leading-loose tracking-normal sm:text-left">
+          <p>
+            I first got into coding back in high school while taking a web
+            design course. Today, I&apos;m a Software Engineer based out in
+            Orlando, Florida.
+          </p>
+          <p>
+            I&apos;ve always appreciated Front End Development and the endless
+            amount of creativity you can put into it. Soon, this passion grew
+            into building applications that reflect my interests. It&apos;s
+            allowed me to have this space to explore creativity while still
+            being technical.
+          </p>
+          <p>
+            The majority of the work I do today revolves around JavaScript,
+            TypeScript, CSS, and a little bit of SQL. The main framework
+            I&apos;ve been using is React-along with Tailwind to style my
+            applications.
+          </p>
+          <p>
+            Outside of development (or engineering), I spent most of my time at
+            the gym, walking around the lake nearby, or learning french. It has
+            provided me with a consistent schedule to stay grounded and happy.
+          </p>
+          <p>
+            If you&apos;d like to learn more about me or collaborate on a
+            project please feel free to reach out.
+          </p>
+        </div>
       </div>
     </Layout>
   );
