@@ -9,46 +9,35 @@ import Button from "components/form/Button";
 import Form from "components/form/Form";
 import Input from "components/form/Input";
 
-// Client
-import { supabase } from "client/supabaseClient";
-
 // Schema
 import { loginSchema } from "schema/authentication";
 
 // Helpers
 import { app, buttons, links } from "helpers/text";
 
+// SWR
+import { userLogin } from "lib/auth";
+
 const Home: NextPage = () => {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
 
+  // Handles login.
   const onSubmit = (data: any) => {
-    userLogin(data).then(() => {
-      router.push("/");
-    });
+    setLoading(true);
+    userLogin(data)
+      .then(() => {
+        // NOTE: We can destructure user and error here.
+        setLoading(false);
+        toast.success("Successfully logged in!");
+        router.push("/feed");
+      })
+      .catch((error) => {
+        setLoading(false);
+        toast.error("Error logging user in.");
+        console.error(error.error_description || error.message);
+      });
   };
-
-  // NOTE: This authentication is actually working.
-  async function userLogin({ email, password }: any) {
-    try {
-      setLoading(true);
-      // NOTE: Can do destructure data here.
-      const { error } = await supabase.auth.signIn({ email, password });
-
-      if (error) {
-        throw error;
-      }
-
-      setLoading(false);
-      toast.success("Logged in.");
-    } catch (error) {
-      setLoading(false);
-      // @ts-expect-error
-      toast.error(`${error.error_description || error.message}.`);
-      // @ts-expect-error
-      console.error(error.error_description || error.message);
-    }
-  }
 
   // Shared input classes.
   const inputClasses = {
