@@ -1,9 +1,10 @@
 export const projects = [
   {
-    name: "slicesum",
-    description: "Budgeting app to help users track their finances better.",
-    link: "https://slicesum.com/",
-    altText: "Slicesum - Budgeting application.",
+    name: "Roastly",
+    description:
+      " Geo-social networking app that allows users to share their coffee order with friends.",
+    link: "https://roastly.xyz",
+    altText: "Roastly - Coffee with friends.",
   },
   {
     name: "Streats",
@@ -20,15 +21,9 @@ export const projects = [
     altText: "localhand - Support small, local businesses.",
   },
   {
-    name: "LEGO305",
+    name: "Lego305",
     description: "Envisioning a new Miami through Lego Bricks.",
     link: "https://www.youtube.com/watch?v=b8VYoZhTU6c&t=72s",
     altText: "LEG305 - A project led by Miami-Dade College students.",
-  },
-  {
-    name: "TutorCloud",
-    description: "Created a mock tutoring service for a statistics class.",
-    link: "",
-    altText: "TutorCloud - Mock Tutoring Serivce.",
   },
 ];
