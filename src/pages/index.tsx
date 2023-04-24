@@ -34,7 +34,7 @@ export default function Home({ allPostsData }: any) {
         </main>
         <section className="flex flex-col justify-center items-start p-4 sm:p-0">
           <h2 className="text-2xl font-semibold text-gray-900">Recent Posts</h2>
-          <div className="divide-y">
+          <div className="divide-y w-full">
             {allPostsData.map(({ id, date, title }: any) => (
               <div
                 key={id}
