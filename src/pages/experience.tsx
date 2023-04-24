@@ -92,7 +92,7 @@ export default function Experience() {
         <div className="flex flex-col justify-center items-center space-y-4">
           <h2 className="text-2xl font-semibold text-gray-900">Resume</h2>
           <Image
-            className="hidden md:block"
+            className="hidden md:block w-full"
             src={Document}
             alt="Image of Arthur's resume."
           />

@@ -15,7 +15,7 @@ const Layout: React.FC<{ children: JSX.Element }> = ({
 }): JSX.Element => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-2xl">
         <div className="flex items-center justify-center p-2 space-x-4">
           <Image
             alt="Portrait of Arthur Henry."

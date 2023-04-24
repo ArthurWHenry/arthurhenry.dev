@@ -10,12 +10,12 @@ export default function About() {
         <Head>
           <title>About</title>
         </Head>
-        <div className="flex flex-col justify-center items-center space-y-2">
+        <div className="flex flex-col justify-center items-center space-y-2 p-4 sm:p-0">
           <h2 className="text-2xl font-semibold text-gray-900">About</h2>
-          <div className="leading-loose tracking-wide space-y-2 flex flex-col text-center sm:text-left">
+          <div className="leading-loose tracking-wide space-y-2 flex flex-col text-center">
             <p>
-              Hello, there! My name is Arthur Henry and I&apos;m a Software
-              Engineer based out in Maitland, Florida.
+              Hello, there! My name is Arthur and I&apos;m a Software Engineer
+              based out in Maitland, Florida.
             </p>
             <p>
               I primarily use TypeScript (and JavaScript, occasionally) within
