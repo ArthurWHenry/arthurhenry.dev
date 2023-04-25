@@ -10,7 +10,7 @@
 }
 
 .markdown pre {
-  @apply bg-gray-200 px-4 py-1 rounded-lg text-xs md:text-sm my-3 whitespace-pre-wrap;
+  @apply bg-gray-200 px-4 py-1 rounded-lg text-sm my-3 overflow-scroll;
 }
 
 .markdown h1 {
