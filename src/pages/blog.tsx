@@ -5,6 +5,7 @@ import Layout from "@/src/components/layout/component";
 
 // Lib
 import { getSortedPostsData } from "@/lib/posts";
+import Link from "next/link";
 
 export default function Resume({ allPostsData }: any) {
   return (
@@ -16,23 +17,20 @@ export default function Resume({ allPostsData }: any) {
         <main className="flex flex-col justify-center items-start p-4 sm:p-0">
           <h2 className="text-2xl font-semibold text-gray-900">Posts</h2>
           <div className="divide-y w-full">
-            {allPostsData.map(({ id, content, date, title }: any) => {
-              const sentences = content.split("\n");
+            {allPostsData.map(({ id, date, title }: any) => {
               return (
                 <div
                   key={id}
                   className="flex flex-col justify-center items-start py-2"
                 >
-                  <span className="text-gray-700 text-normal tracking-wide">
+                  <Link
+                    className="text-gray-700 text-normal tracking-wide transition duration-150 ease-linear hover:text-gray-900"
+                    href={`/posts/${id}`}
+                  >
                     {title}
-                  </span>
+                  </Link>
                   <span className="text-gray-900">{id}</span>
                   <span className="text-gray-500">{date}</span>
-                  <div className="flex flex-col space-y-2">
-                    {sentences.map((sentence: any, idx: number) => (
-                      <p key={idx}>{sentence}</p>
-                    ))}
-                  </div>
                 </div>
               );
             })}

@@ -6,6 +6,7 @@ import TypingText from "../components/helpers/TypingText";
 
 // Lib
 import { getSortedPostsData } from "@/lib/posts";
+import Link from "next/link";
 
 export default function Home({ allPostsData }: any) {
   return (
@@ -35,14 +36,17 @@ export default function Home({ allPostsData }: any) {
         <section className="flex flex-col justify-center items-start p-4 sm:p-0">
           <h2 className="text-2xl font-semibold text-gray-900">Recent Posts</h2>
           <div className="divide-y w-full">
-            {allPostsData.map(({ id, date, title }: any) => (
+            {allPostsData.slice(0, 3).map(({ id, date, title }: any) => (
               <div
                 key={id}
                 className="flex flex-col justify-center items-start py-2"
               >
-                <span className="text-gray-700 text-normal tracking-wide">
+                <Link
+                  className="text-gray-700 text-normal tracking-wide transition duration-150 ease-linear hover:text-gray-900"
+                  href={`/posts/${id}`}
+                >
                   {title}
-                </span>
+                </Link>
                 <span className="text-gray-900">{id}</span>
                 <span className="text-gray-500">{date}</span>
               </div>
