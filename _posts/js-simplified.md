@@ -103,7 +103,7 @@ const set = new Set<number>(nums);
 
 ### Setting a Value in a Map Object
 
-Let’s say I was creating a map that stores the amount of time a user has visited my website.
+Let’s say I was creating a map that stores the amount of times someone has visited my site.
 ```tsx
 const map = new Map<string, number>();
 
