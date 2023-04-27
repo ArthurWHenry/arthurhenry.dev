@@ -3,7 +3,7 @@ title: 'JavaScript Simplified'
 date: '2023-04-25'
 ---
 
-# JavaScript Simplified
+# JavaScript Simplified in TypeScript
 While interviewing, I started to take notes on a couple JavaScript concepts that I found useful to prepare for Front End Engineering positions. I was able to narrow it down to the concepts below.
 
 ## Async/Await
@@ -66,10 +66,10 @@ myPromise.then((): void => {
 A combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
 
 ```tsx
-const main = (): void => {
+function main(): void => {
   const name: string = "Arthur";
 
-  const greeting = (): void => {
+  function greeting(): void {
     // Because we are still in the same lexical scope or the same enclosed
     // area, we have access to name within this function.
     console.log(`Hello, ${name}!`)
@@ -95,26 +95,26 @@ If we want to turn an array into a set, we initialize a new Set object with the 
 
 ```tsx
 // We can start a set by passing in the array directly.
-const nums = [1, 2, 3, 4, 5];
+const nums: Array<number> = [1, 2, 3, 4, 5];
 
 // We can start a set like below and it'll start it with the values from nums.
-const set = new Set(nums);
+const set = new Set<number>(nums);
 ```
 
 ### Setting a Value in a Map Object
 
 Let’s say I was creating a map that stores the amount of time a user has visited my website.
 ```tsx
-const map = new Map();
+const map = new Map<string, number>();
 
-const user = 'Arthur'
+const user: string = 'Arthur'
 
 map.set(user, 1)
 
 // With this line, we are retriving the key's value and if it doesn't exist
 // the get() method will return undefined and default to 1. Essentially, saying
 // that this is the first time the user visits the website.
-const value = map.get(user) + 1 || 1
+const value: number = map.get(user) + 1 || 1
 
 // Then we store the user with the updated (or new) value.
 map.set(user, value)
