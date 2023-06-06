@@ -12,7 +12,7 @@ const Footer: React.FC = (): JSX.Element => {
         <div className="flex space-x-4 text-gray-700">
           <Link
             className="transition duration-150 ease-linear hover:text-gray-900"
-            href={""}
+            href="https://www.linkedin.com/in/arthurwhenry/"
             target="_blank"
             rel="norefferer noopenner"
           >
@@ -20,7 +20,7 @@ const Footer: React.FC = (): JSX.Element => {
           </Link>
           <Link
             className="transition duration-150 ease-linear hover:text-gray-900"
-            href={""}
+            href="https://github.com/ArthurWHenry"
             target="_blank"
             rel="norefferer noopenner"
           >
@@ -28,7 +28,7 @@ const Footer: React.FC = (): JSX.Element => {
           </Link>
           <Link
             className="transition duration-150 ease-linear hover:text-gray-900"
-            href={""}
+            href="https://www.instagram.com/arthurwhenry/"
             target="_blank"
             rel="norefferer noopenner"
           >
