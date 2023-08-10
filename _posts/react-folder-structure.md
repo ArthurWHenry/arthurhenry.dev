@@ -10,9 +10,9 @@ organization and development keeps me up at night (sometimes). Seeking wisdom,
 I tweeted Dan Abramov, a notable figure, for advice. Where he basically said,
 "It's the last thing I'm worried about.".
 
-Despite Dan's short response, I am still curious about the ideal structure for a
-React project. This thoughtful process, to me, has highlighted the pivotal role
-a well-designed framework plays in a seamless development experience.
+Despite Dan's short response, I was still curious about the ideal structure for a
+React project. This thoughtful process has highlights the pivotal role a
+well-designed framework plays in a seamless development experience.
 
 In this blog post, I'll dive into a key pattern that serves as the cornerstone
 of my React folder strategy. This pattern doesn't just provide a solid foundation for
