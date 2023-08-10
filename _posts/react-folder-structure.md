@@ -6,15 +6,15 @@ date: '2023-08-09'
 # Folder Structures in React
 Embarking on a new project is exhilarating, but one challenge persists: establishing
 the right folder structure. The impact of this seemingly mundane choice on project 
-organization and development keeps me up at night (sometimes). Seeking wisdom, I even reached out to Dan
-Abramov, a notable figure, for advice. His pragmatic response—"It's the last thing 
-I'm worried about"—left a mark.
+organization and development keeps me up at night (sometimes). Seeking wisdom,
+I tweeted Dan Abramov, a notable figure, for advice. Where he basically said,
+"It's the last thing I'm worried about.".
 
-Despite Dan's nonchalance, I still meticulously ponder the ideal structure for each
-project. This thoughtful process highlights the pivotal role a well-designed 
-framework plays in a seamless development experience.
+Despite Dan's short response, I am still curious about the ideal structure for a
+React project. This thoughtful process, to me, has highlighted the pivotal role
+a well-designed framework plays in a seamless development experience.
 
-In this blog post, we delve into a fundamental pattern that serves as the cornerstone
+In this blog post, I'll dive into a key pattern that serves as the cornerstone
 of my React folder strategy. This pattern doesn't just provide a solid foundation for
 project organization, but it also enhances collaboration, maintainability, and
 scalability.
