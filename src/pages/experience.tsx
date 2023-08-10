@@ -101,7 +101,7 @@ export default function Experience() {
             target="_blank"
             rel="noorefferer noopenner"
             href="Resume.pdf"
-            download="Resume_Arthur_Henry.pdf"
+            download="Resume.pdf"
           >
             Download my resume
           </a>
