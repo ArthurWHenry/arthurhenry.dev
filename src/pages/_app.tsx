@@ -1,12 +1,12 @@
 import "@/src/styles/globals.css";
 import type { AppProps } from "next/app";
-import { Archivo } from "next/font/google";
+import { Inter } from "next/font/google";
 
-const archivo = Archivo({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={archivo.className}>
+    <div className={inter.className}>
       <Component {...pageProps} />
     </div>
   );
