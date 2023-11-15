@@ -1,7 +1,7 @@
 import { createContext, memo, useContext, useEffect, useState } from "react";
 
 // Components
-import Navigation from "@/src/components/navigation";
+import { Navigation } from "@/src/components";
 
 const ThemeContext = createContext("light");
 
@@ -12,9 +12,9 @@ const Layout: React.FC<{ children: JSX.Element }> = ({
 }): JSX.Element => {
   const [theme, setTheme] = useState(() => {
     if (typeof window !== "undefined") {
-      return localStorage.getItem("Arthur.Henry.theme") || "light";
+      return localStorage.getItem("Arthur.Henry.theme") || "dark";
     }
-    return "light";
+    return "dark";
   });
   const [hasMounted, setHasMounted] = useState(false);
 
@@ -48,7 +48,7 @@ const Layout: React.FC<{ children: JSX.Element }> = ({
             </div>
             <div>
               <button
-                className="border px-2 py-1 rounded-md bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-900 focus:outline-none hover:bg-gray-50 duration-150 transition"
+                className="theme-switcher"
                 onClick={() => {
                   const newTheme = theme === "light" ? "dark" : "light";
                   setTheme(newTheme);

@@ -21,3 +21,15 @@
 .quote {
   @apply w-full bg-gray-100 dark:bg-gray-800 border justify-center dark:border-gray-700 dark:text-gray-50 items-center rounded-lg p-6 text-gray-900 text-center;
 }
+
+.project-container {
+ @apply border dark:border-gray-700 rounded-lg px-8 py-4 space-y-2 bg-gray-100 dark:bg-gray-800;
+}
+
+.project-demo-link {
+  @apply flex space-x-1 text-sm text-gray-700 dark:text-gray-300  items-center border dark:border-gray-700 rounded-md w-20 bg-gray-50 dark:bg-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 justify-center px-2 py-1 transition duration-150 ease-linear hover:text-gray-900;
+}
+
+.theme-switcher {
+  @apply border px-2 py-1 rounded-md bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-900 focus:outline-none hover:bg-gray-50 duration-150 transition ease-linear;
+}

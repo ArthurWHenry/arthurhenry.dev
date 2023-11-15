@@ -1,2 +1,2 @@
 import Navigation from "./component";
-export default Navigation;
+export { Navigation };

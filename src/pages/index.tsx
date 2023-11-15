@@ -5,12 +5,12 @@ import Image from "next/image";
 import Portrait from "@/public/Portrait.jpeg";
 
 // Components
-import Layout from "@/src/components/layout";
+import { Layout } from "@/src/components";
 
 export default function Home() {
   return (
     <Layout>
-      <div className="flex flex-col space-y-4 py-2">
+      <div className="flex flex-col space-y-4">
         <Head>
           <title>Home</title>
         </Head>
