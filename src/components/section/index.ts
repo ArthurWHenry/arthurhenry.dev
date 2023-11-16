@@ -1,2 +1,2 @@
-import { AboutLink, Section } from "./component";
-export { AboutLink, Section };
+import { Recommendation, SectionLink, Section } from "./component";
+export { Recommendation, SectionLink, Section };

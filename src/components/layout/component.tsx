@@ -1,7 +1,7 @@
 import { createContext, memo, useContext, useEffect, useState } from "react";
 
 // Components
-import { Navigation } from "@/src/components";
+import { Footer, Navigation } from "@/src/components";
 
 const ThemeContext = createContext("light");
 
@@ -60,6 +60,7 @@ const Layout: React.FC<{ children: JSX.Element }> = ({
           </div>
           <Navigation />
           <div className="py-4">{children}</div>
+          <Footer />
         </div>
       </div>
     </ThemeContext.Provider>

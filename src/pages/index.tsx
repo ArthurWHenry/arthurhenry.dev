@@ -5,7 +5,10 @@ import Image from "next/image";
 import Portrait from "@/public/Portrait.jpeg";
 
 // Components
-import { Layout } from "@/src/components";
+import { Layout, Recommendation, Section } from "@/src/components";
+
+// Resources
+import { recommendations } from "@/src/resources";
 
 export default function Home() {
   return (
@@ -46,6 +49,13 @@ export default function Home() {
             <p>- Greg McKeown</p>
           </div>
         </div>
+        <Section title="Recommendations">
+          <div className="space-y-4 mt-4">
+            {recommendations.map((recommendation) => (
+              <Recommendation key={recommendation.name} {...recommendation} />
+            ))}
+          </div>
+        </Section>
       </div>
     </Layout>
   );
