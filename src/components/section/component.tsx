@@ -53,7 +53,7 @@ export const SectionLink: React.FC<AboutLinkProps> = ({ href, text }: any) => (
 );
 
 export const Section: React.FC<SectionProps> = ({ title, children }: any) => (
-  <div className="divide-y divide-gray-700 dark:divide-gray-400">
+  <div className="divide-y divide-gray-300 dark:divide-gray-700">
     <h2 className="section-secondary-header">{title}</h2>
     <div>{children}</div>
   </div>
