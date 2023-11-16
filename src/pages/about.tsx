@@ -33,7 +33,7 @@ export default function About() {
             <p>
               I created this website so to share some aspects of my life with
               the world. You can check out the{" "}
-              <Link href="/projects" className="about-list-link">
+              <Link href="/projects" className="section-list-link">
                 projects
               </Link>{" "}
               page for some of the things I&apos;ve worked on.
