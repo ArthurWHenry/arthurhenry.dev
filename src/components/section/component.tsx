@@ -40,7 +40,7 @@ export const Recommendation: React.FC<RecommendationProps> = ({
         className="text-gray-700 dark:text-gray-200 underline mt-2"
         onClick={() => setShowAll(!showAll)}
       >
-        Read more
+        {!showAll ? "Read more" : "Read less"}
       </button>
     </div>
   );
