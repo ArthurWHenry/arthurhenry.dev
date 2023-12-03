@@ -1,4 +1,5 @@
-import { createContext, memo, useContext, useEffect, useState } from "react";
+import Link from "next/link";
+import { createContext, memo, useEffect, useState } from "react";
 
 // Components
 import { Footer, Navigation } from "@/src/components";
@@ -41,11 +42,11 @@ const Layout: React.FC<{ children: JSX.Element }> = ({
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-4 md:p-2">
         <div className="mx-auto max-w-2xl">
           <div className="flex items-center justify-between space-x-4">
-            <div>
+            <Link href="/">
               <span className="text-2xl font-bold text-gray-900 dark:text-gray-50">
                 🧑🏽‍💻 Arthur Henry
               </span>
-            </div>
+            </Link>
             <div>
               <button
                 className="theme-switcher"
