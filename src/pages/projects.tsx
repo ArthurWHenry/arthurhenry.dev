@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { NextSeo } from "next-seo";
 
 // Components
 import { Layout, Project } from "@/src/components";
@@ -47,17 +48,23 @@ const projects: ProjectProps[] = [
 
 export default function Projects() {
   return (
-    <Layout>
-      <div className="flex flex-col space-y-4">
-        <Head>
-          <title>Projects</title>
-        </Head>
-        <main className="space-y-4">
-          {projects.map((project) => (
-            <Project key={project.name} {...project} />
-          ))}
-        </main>
-      </div>
-    </Layout>
+    <>
+      <NextSeo
+        title="Projects"
+        description="Projects that Arthur Henry has worked on."
+      />
+      <Layout>
+        <div className="flex flex-col space-y-4">
+          <Head>
+            <title>Projects</title>
+          </Head>
+          <main className="space-y-4">
+            {projects.map((project) => (
+              <Project key={project.name} {...project} />
+            ))}
+          </main>
+        </div>
+      </Layout>
+    </>
   );
 }
