@@ -20,15 +20,27 @@ export default function About() {
               About me
             </h1>
           </div>
-          <div className="space-y-2 text-gray-700 dark:text-gray-300">
+          <div className="space-y-3 text-gray-700 dark:text-gray-300">
             <p>
               Hey, I&apos;m Arthur! I&apos;m a Software Engineer working
-              remotely from Orlando. I graduated with a bachelor&apos;s in
+              remotely from Miami. I graduated with a bachelor&apos;s in
               Computer Science from the University of Central Florida in hopes
               of working on technology that changes or improves our lives.
               I&apos;m still trying to figure that part out, but it&apos;s still
               early in my journey and there&apos;s a lot more to be curious
               about.
+            </p>
+            <p>
+              Currently, my main passion within engineering is frontend
+              development. I feel satisfaction being able to build modern and
+              performant interfaces for users. Thankfully, in my current role at
+              Nielsen, I&apos;ve been able to develop this skill professionally.
+            </p>
+            <p>
+              Looking towards the future, I want to expand my backend skillset
+              to dominate the full stack. My experience with backend
+              technologies is around building microservices in Java, training
+              models in Python, and writing SQL queries.
             </p>
             <p>
               I created this website so to share some aspects of my life with
@@ -93,7 +105,7 @@ export default function About() {
             </li>
             <li>
               <b>Music:</b>{" "}
-              <SectionLink href="https://open.spotify.com/" text="Spotify" />
+              <SectionLink href="https://music.apple.com/" text="Apple Music" />
             </li>
           </ul>
         </Section>
