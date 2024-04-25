@@ -26,22 +26,27 @@ export const recommendations: RecommendationProps[] = [
 export const songs = [
   {
     name: "Yo Sigo Igual by Bad Gyal (feat. Fakeguido & El Guincho)",
-    link: "https://music.apple.com/us/album/yo-sigo-igual-feat-fakeguido-el-guincho/1350843367?i=1350843839",
+    iframe:
+      "https://open.spotify.com/embed/track/25RN6owXD29BH7fu2vlz3q?utm_source=generator",
   },
   {
     name: "SEMPRE / JAMAIS by Mahmood, Angèle",
-    link: "https://music.apple.com/us/album/sempre-jamais/1732593280?i=1732593743",
+    iframe:
+      "https://open.spotify.com/embed/track/5cQ7nEhyl1fTn5e4jbqaBY?utm_source=generator",
   },
   {
     name: "TUTA GOLD by Mahmood",
-    link: "https://music.apple.com/us/album/tuta-gold/1732593280?i=1732593458",
+    iframe:
+      "https://open.spotify.com/embed/track/654Jxp6rUFgPckixlIusRJ?utm_source=generator",
   },
   {
     name: "Illusion by Dua Lipa",
-    link: "https://music.apple.com/us/album/illusion/1734980417?i=1734980444",
+    iframe:
+      "https://open.spotify.com/embed/track/59xD5osEFsaNt5PXfIKUnX?utm_source=generator",
   },
   {
     name: "Saint-Germain by Emma Hoet",
-    link: "https://music.apple.com/us/album/saint-germain/1735757715?i=1735758064",
+    iframe:
+      "https://open.spotify.com/embed/track/0xjRkSgHG8A14Z2q5TdEiy?utm_source=generator",
   },
 ];

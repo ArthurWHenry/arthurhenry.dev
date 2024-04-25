@@ -119,12 +119,18 @@ export default function About() {
               </li>
             </ul>
           </Section>
-          <Section title="Songs">
+          <Section title="On Repeat">
             <ul className="section-list">
-              {songs.map((song) => (
-                <li key={song.link}>
-                  <SectionLink href={song.link} text={song.name} />
-                </li>
+              {songs.map(({ iframe }, idx) => (
+                <div key={idx}>
+                  <iframe
+                    src={iframe}
+                    width="100%"
+                    height="152"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                  ></iframe>
+                </div>
               ))}
             </ul>
           </Section>
