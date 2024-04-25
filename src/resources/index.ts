@@ -25,23 +25,23 @@ export const recommendations: RecommendationProps[] = [
 
 export const songs = [
   {
-    name: "Speed of Plight by Loyle Carner",
-    link: "https://open.spotify.com/track/1t2YGrS7RAznI7zFR0aIIP?si=30e36c7999654b3d",
+    name: "Yo Sigo Igual by Bad Gyal (feat. Fakeguido & El Guincho)",
+    link: "https://music.apple.com/us/album/yo-sigo-igual-feat-fakeguido-el-guincho/1350843367?i=1350843839",
   },
   {
-    name: "Donne-moi ton cœur by Louane",
+    name: "SEMPRE / JAMAIS by Mahmood, Angèle",
     link: "https://open.spotify.com/track/5amRIQxQgERN9wI1oMuRgw?si=9618799f8ac64b77",
   },
   {
-    name: "Love It If We Made It by The 1975",
+    name: "TUTA GOLD by Mahmood",
     link: "https://open.spotify.com/track/6WmIyn2fx1PKQ0XDpYj4VR?si=8e2827294cb84cc1",
   },
   {
-    name: "Fever by Dua Lipa and Angèle",
-    link: "https://open.spotify.com/track/3F1P0QzdXtBz0MXy7KIO5w?si=23f385b07e4447b1",
+    name: "Illusion by Dua Lipa",
+    link: "https://music.apple.com/us/album/illusion/1734980417?i=1734980444",
   },
   {
-    name: "Virginia Beach by Drake",
-    link: "https://open.spotify.com/track/3eP13S8D5m2cweMEg3ZDed?si=f5ea89a418b847e4",
+    name: "Saint-Germain by Emma Hoet",
+    link: "https://music.apple.com/us/album/saint-germain/1735757715?i=1735758064",
   },
 ];

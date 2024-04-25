@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 // Assests
-import Portrait from "@/public/Portrait.jpeg";
+import Portrait from "@/public/Portrait.jpg";
 
 // Components
 import { Layout, Recommendation, Section } from "@/src/components";
@@ -23,9 +23,9 @@ export default function Home() {
               👋 Hey, I&apos;m Arthur!
             </p>
             <p className="text-gray-700 dark:text-gray-300">
-              🏋️ Whether I&apos;m in the zone at the gym, immersed in code, or
-              delving into the beauty of the French language, my days are a mix
-              of passion and purpose.
+              🏋️ Whether I&apos;m at the gym in the early morning, working on
+              personal projects, or diving into the beauty of the French
+              language, my days are a mix of passion and purpose.
             </p>
             <p className="text-gray-700 dark:text-gray-300">
               🎧 Music is my soundtrack, books are my escape, and long walks are

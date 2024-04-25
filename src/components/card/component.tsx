@@ -40,12 +40,13 @@ export const Project: React.FC<ProjectProps> = ({
         ))}
       </div>
     </div>
-
     <div>
-      <Link className="project-demo-link" href={link} target="_blank">
-        <span>Demo</span>
-        <HiExternalLink />
-      </Link>
+      {link && link.length > 1 && (
+        <Link className="project-demo-link" href={link} target="_blank">
+          <span>Demo</span>
+          <HiExternalLink />
+        </Link>
+      )}
     </div>
   </div>
 );

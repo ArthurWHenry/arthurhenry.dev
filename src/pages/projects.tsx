@@ -19,7 +19,7 @@ const projects: ProjectProps[] = [
   {
     name: "Streats",
     inactive: true,
-    link: "https://gostreats.com",
+    link: "",
     about:
       "Geolocation application that allows users to track live location of food trucks nearby.",
     uses: ["React", "TailwindCSS", "TypeScript"],
