@@ -30,11 +30,11 @@ export const songs = [
   },
   {
     name: "SEMPRE / JAMAIS by Mahmood, Angèle",
-    link: "https://open.spotify.com/track/5amRIQxQgERN9wI1oMuRgw?si=9618799f8ac64b77",
+    link: "https://music.apple.com/us/album/sempre-jamais/1732593280?i=1732593743",
   },
   {
     name: "TUTA GOLD by Mahmood",
-    link: "https://open.spotify.com/track/6WmIyn2fx1PKQ0XDpYj4VR?si=8e2827294cb84cc1",
+    link: "https://music.apple.com/us/album/tuta-gold/1732593280?i=1732593458",
   },
   {
     name: "Illusion by Dua Lipa",
