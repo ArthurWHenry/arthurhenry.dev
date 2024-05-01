@@ -9,6 +9,22 @@ import { ProjectProps } from "@/src/types";
 
 const projects: ProjectProps[] = [
   {
+    name: "Budget Helper",
+    inactive: false,
+    link: "https://budget-helper-7ouzhy192-arthur-henrys-projects.vercel.app/",
+    about:
+      "Budgeting application that helps users track their expenses and income.",
+    uses: [
+      "Next.js",
+      "TypeScript",
+      "Recoil",
+      "react-hook-form",
+      "TailwindCSS",
+      "TanStack Table (react-table)",
+    ],
+    year: 2024,
+  },
+  {
     name: "Roastly",
     inactive: false,
     link: "https://roastly.xyz/",

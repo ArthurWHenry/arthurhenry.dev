@@ -29,25 +29,26 @@ export default function About() {
             <div className="space-y-3 text-gray-700 dark:text-gray-300">
               <p>
                 Hey, I&apos;m Arthur! I&apos;m a Software Engineer working
-                remotely from Miami. I graduated with a bachelor&apos;s in
-                Computer Science from the University of Central Florida in hopes
-                of working on technology that changes or improves our lives.
-                I&apos;m still trying to figure that part out, but it&apos;s
-                still early in my journey and there&apos;s a lot more to be
-                curious about.
+                remotely from Miami. I graduated with a{" "}
+                <b>
+                  Bachelor&apos;s in Computer Science from the University of
+                  Central Florida
+                </b>
+                .
               </p>
               <p>
-                Currently, my main passion within engineering is frontend
-                development. I feel satisfaction being able to build modern and
-                performant interfaces for users. Thankfully, in my current role
-                at Nielsen, I&apos;ve been able to develop this skill
-                professionally.
+                Currently, I&apos;m working primarily as a frontend engineer on
+                my team at Nielsen. Using <b>React</b> TypeScript and Cypress to
+                build dynamic and reliable web applications. Working with React
+                throughout the past 6 years has been one of the most rewarding
+                experiences in my personal and professional career.
               </p>
               <p>
-                Looking towards the future, I want to expand my backend skillset
-                to dominate the full stack. My experience with backend
-                technologies is around building microservices in Java, training
-                models in Python, and writing SQL queries.
+                Looking into the future, I want to start working with more
+                backend technologies to make myself versatile. So, I&apos;ve
+                been working with languages like <b>Java</b>, <b>Python</b>, and{" "}
+                <b>SQL</b> during my own time and taking up work at Nieslen to
+                gain hands-on experience.
               </p>
               <p>
                 I created this website so to share some aspects of my life with
