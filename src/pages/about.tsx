@@ -28,8 +28,8 @@ export default function About() {
             </div>
             <div className="space-y-3 text-gray-700 dark:text-gray-300">
               <p>
-                Hey, I&apos;m Arthur! I&apos;m a Software Engineer working
-                remotely from Miami. I graduated with a{" "}
+                Hey, I&apos;m Arthur! I&apos;m a Software Engineer from Miami. I
+                graduated with a{" "}
                 <b>
                   Bachelor&apos;s in Computer Science from the University of
                   Central Florida
@@ -37,11 +37,11 @@ export default function About() {
                 .
               </p>
               <p>
-                Currently, I&apos;m working primarily as a frontend engineer on
-                my team at Nielsen. Using <b>React</b> TypeScript and Cypress to
-                build dynamic and reliable web applications. Working with React
-                throughout the past 6 years has been one of the most rewarding
-                experiences in my personal and professional career.
+                Currently, I&apos;m a frontend engineer at American Express.
+                Using <b>React</b> to build dynamic and reliable applications.
+                Working with React throughout the past 7 years has been one of
+                the most rewarding experiences in my personal and professional
+                career.
               </p>
               <p>
                 Looking into the future, I want to start working with more
