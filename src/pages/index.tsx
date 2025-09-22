@@ -11,7 +11,10 @@ import { Layout, Recommendation, Section } from "@/src/components";
 // Resources
 import { recommendations } from "@/src/resources";
 
-export default function Home() {
+// Types
+import { RecommendationProps } from "../types";
+
+export default function Home(): React.ReactElement {
   return (
     <>
       <NextSeo
@@ -58,9 +61,14 @@ export default function Home() {
           </div>
           <Section title="Recommendations">
             <div className="space-y-4 mt-4">
-              {recommendations.map((recommendation) => (
-                <Recommendation key={recommendation.name} {...recommendation} />
-              ))}
+              {recommendations.map(
+                (recommendation: RecommendationProps): React.ReactElement => (
+                  <Recommendation
+                    key={recommendation.name}
+                    {...recommendation}
+                  />
+                )
+              )}
             </div>
           </Section>
         </div>

@@ -8,7 +8,7 @@ import { SectionLink, Layout, Section } from "@/src/components";
 // Resources
 import { songs } from "@/src/resources";
 
-export default function About() {
+export default function About(): React.ReactElement {
   return (
     <>
       <NextSeo
