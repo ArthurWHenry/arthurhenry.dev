@@ -6,11 +6,11 @@ import { Footer, Navigation } from "@/src/components";
 
 const ThemeContext = createContext("light");
 
-const Layout: React.FC<{ children: JSX.Element }> = ({
+const Layout = ({
   children,
 }: {
-  children: JSX.Element;
-}): JSX.Element => {
+  children: React.ReactNode;
+}): React.ReactElement => {
   const [theme, setTheme] = useState(() => {
     if (typeof window !== "undefined") {
       return localStorage.getItem("Arthur.Henry.theme") || "dark";

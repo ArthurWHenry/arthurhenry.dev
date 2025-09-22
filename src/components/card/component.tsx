@@ -12,7 +12,7 @@ export const Project: React.FC<ProjectProps> = ({
   name,
   uses,
   year,
-}) => (
+}: ProjectProps): React.ReactElement => (
   <div className="project-container">
     <div className="flex space-x-2 justify-start items-center">
       <span className="text-gray-600 dark:text-gray-300 text-xs">{year}</span>
