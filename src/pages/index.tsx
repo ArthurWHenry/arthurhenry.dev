@@ -2,8 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
 
-// Assests
-import Portrait from "@/public/Portrait.jpg";
+// Assets
 
 // Components
 import { Layout, Recommendation, Section } from "@/src/components";
@@ -46,7 +45,9 @@ export default function Home(): React.ReactElement {
                 alt="Portrait of Arthur Henry."
                 className="rounded-lg"
                 priority={false}
-                src={Portrait}
+                src="/Portrait.jpg"
+                width={512}
+                height={512}
               />
             </div>
           </main>
