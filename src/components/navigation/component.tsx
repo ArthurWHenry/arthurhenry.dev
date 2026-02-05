@@ -25,7 +25,7 @@ const links = [
   },
 ];
 
-const Navigation: React.FC = (): JSX.Element => {
+const Navigation = (): React.ReactElement => {
   const router = useRouter();
 
   return (
