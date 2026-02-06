@@ -2,7 +2,7 @@ import Link from "next/link";
 import { memo } from "react";
 import { FaLinkedin } from "react-icons/fa";
 
-const Footer: React.FC = () => {
+const Footer = (): React.ReactElement => {
   return (
     <footer className="flex flex-col justify-center items-center py-4 space-y-2">
       <div>

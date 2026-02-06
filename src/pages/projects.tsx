@@ -70,7 +70,7 @@ const projects: ProjectProps[] = [
   },
 ];
 
-export default function Projects() {
+export default function Projects(): React.ReactElement {
   return (
     <>
       <NextSeo
@@ -83,9 +83,11 @@ export default function Projects() {
             <title>Projects</title>
           </Head>
           <main className="space-y-4">
-            {projects.map((project) => (
-              <Project key={project.name} {...project} />
-            ))}
+            {projects.map(
+              (project: ProjectProps): React.ReactElement => (
+                <Project key={project.name} {...project} />
+              )
+            )}
           </main>
         </div>
       </Layout>

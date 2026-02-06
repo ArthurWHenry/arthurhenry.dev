@@ -25,7 +25,7 @@ const links = [
   },
 ];
 
-const Navigation = () => {
+const Navigation = (): React.ReactElement => {
   const router = useRouter();
 
   return (
