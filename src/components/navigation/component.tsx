@@ -37,7 +37,7 @@ const Navigation = (): React.ReactElement => {
               router.pathname === href
                 ? "text-gray-900 dark:text-gray-50 border-b-2 border-gray-900 dark:border-gray-50"
                 : "text-gray-600 dark:text-gray-400",
-              " hover:text-gray-900 dark:hover:text-gray-50 duration-150 transition flex items-center space-x-1"
+              " hover:text-gray-900 dark:hover:text-gray-50 duration-150 transition flex items-center space-x-1",
             )}
             href={href}
             key={idx}

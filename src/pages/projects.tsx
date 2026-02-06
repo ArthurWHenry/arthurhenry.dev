@@ -9,15 +9,23 @@ import { ProjectProps } from "@/src/types";
 
 const projects: ProjectProps[] = [
   {
+    name: "Coffee Logger",
+    inactive: false,
+    link: "https://coffee-logger.pages.dev/",
+    about: "Logging application that tracks the bags of coffee you've bought.",
+    uses: ["Next.js", "TypeScript", "Jotai"],
+    year: 2025,
+  },
+  {
     name: "Budget Helper",
     inactive: false,
-    link: "https://budget-helper-eight.vercel.app/",
+    link: "https://budget-helper.pages.dev/",
     about:
       "Budgeting application that helps users track their expenses and income.",
     uses: [
       "Next.js",
       "TypeScript",
-      "Recoil",
+      "Jotai",
       "react-hook-form",
       "TailwindCSS",
       "TanStack Table (react-table)",
