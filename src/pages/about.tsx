@@ -5,10 +5,7 @@ import { NextSeo } from "next-seo";
 // Components
 import { SectionLink, Layout, Section } from "@/src/components";
 
-// Resources
-import { songs } from "@/src/resources";
-
-export default function About(): React.ReactElement {
+export default function About(): React.ReactElement<any> {
   return (
     <>
       <NextSeo
@@ -16,17 +13,13 @@ export default function About(): React.ReactElement {
         description="Additional information about Arthur Henry."
       />
       <Layout>
-        <div className="flex flex-col space-y-4">
+        <div className="flex flex-col gap-10 md:gap-12">
           <Head>
             <title>About</title>
           </Head>
           <main>
-            <div className="pb-2">
-              <h1 className="text-3xl text-gray-900 dark:text-gray-50 font-bold">
-                About me
-              </h1>
-            </div>
-            <div className="space-y-3 text-gray-700 dark:text-gray-300">
+            <h1 className="page-title">About me</h1>
+            <div className="space-y-3 text-black dark:text-white">
               <p>
                 Hey, I&apos;m Arthur! I&apos;m a Software Engineer from Miami. I
                 graduated with a{" "}
@@ -63,8 +56,21 @@ export default function About(): React.ReactElement {
           <Section title="What I'm doing now">
             <ul className="section-list">
               <li>
-                Working on{" "}
-                <SectionLink href="https://www.roastly.xyz/" text="Roastly" />
+                Learning{" "}
+                <SectionLink href="https://www.python.org/" text="Python" />
+              </li>
+              <li>Building skills for agents</li>
+              <li>
+                Reading <i>The Idiot</i> by{" "}
+                <SectionLink
+                  href="https://en.wikipedia.org/wiki/Elif_Batuman"
+                  text="Elif Batuman"
+                />
+              </li>
+              <li>
+                Binging{" "}
+                <SectionLink href="https://bigthink.com/" text="Big Think" />{" "}
+                videos on YouTube
               </li>
               <li>J&apos;étudie le français</li>
             </ul>
@@ -82,7 +88,7 @@ export default function About(): React.ReactElement {
             <ul className="section-list">
               <li>
                 This website is hosted on{" "}
-                <SectionLink href="https://vercel.com/" text="Vercel" /> and is
+                <SectionLink href="https://pages.cloudflare.com/" text="Cloudflare Pages" /> and is
                 built with{" "}
                 <SectionLink href="https://nextjs.org/" text="Next.js" />
               </li>
@@ -94,18 +100,18 @@ export default function About(): React.ReactElement {
                 />{" "}
                 with{" "}
                 <SectionLink
-                  href=" https://github.com/wesbos/cobalt2/"
-                  text="Cobalt 2 Theme"
+                  href="https://github.com/rebelot/kanagawa.nvim/"
+                  text="Kanagawa Theme"
                 />{" "}
                 and{" "}
                 <SectionLink
-                  href=" https://philpl.gumroad.com/l/dank-mono/"
+                  href="https://philpl.gumroad.com/l/dank-mono/"
                   text="Dank Mono Font"
                 />
               </li>
               <li>
                 <b>Terminal:</b>{" "}
-                <SectionLink href="https://www.warp.dev/" text="Warp" />
+                <SectionLink href="https://iterm2.com/" text="iTerm2" />
               </li>
               <li>
                 <b>Productivity and Notes:</b>{" "}
@@ -118,21 +124,6 @@ export default function About(): React.ReactElement {
                   text="Apple Music"
                 />
               </li>
-            </ul>
-          </Section>
-          <Section title="On Repeat">
-            <ul className="section-list">
-              {songs.map(({ iframe }, idx) => (
-                <div key={idx}>
-                  <iframe
-                    src={iframe}
-                    width="100%"
-                    height="152"
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"
-                  ></iframe>
-                </div>
-              ))}
             </ul>
           </Section>
         </div>

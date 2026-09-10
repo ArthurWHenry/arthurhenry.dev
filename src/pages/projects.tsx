@@ -10,7 +10,7 @@ import { ProjectProps } from "@/src/types";
 const projects: ProjectProps[] = [
   {
     name: "Coffee Logger",
-    inactive: false,
+    inactive: true,
     link: "https://coffee-logger.pages.dev/",
     about: "Logging application that tracks the bags of coffee you've bought.",
     uses: ["Next.js", "TypeScript", "Jotai"],
@@ -34,7 +34,7 @@ const projects: ProjectProps[] = [
   },
   {
     name: "Roastly",
-    inactive: false,
+    inactive: true,
     link: "https://roastly.xyz/",
     about:
       "Geosocial networking application where you share your coffee order online.",
@@ -70,7 +70,7 @@ const projects: ProjectProps[] = [
   },
 ];
 
-export default function Projects(): React.ReactElement {
+export default function Projects(): React.ReactElement<any> {
   return (
     <>
       <NextSeo
@@ -82,12 +82,20 @@ export default function Projects(): React.ReactElement {
           <Head>
             <title>Projects</title>
           </Head>
-          <main className="space-y-4">
-            {projects.map(
-              (project: ProjectProps): React.ReactElement => (
-                <Project key={project.name} {...project} />
-              )
-            )}
+          <main>
+            <h1 className="page-title">Projects</h1>
+            <div className="space-y-8">
+              {[...projects]
+                .sort(
+                  (a: ProjectProps, b: ProjectProps): number =>
+                    Number(a.inactive) - Number(b.inactive)
+                )
+                .map(
+                  (project: ProjectProps): React.ReactElement<any> => (
+                    <Project key={project.name} {...project} />
+                  )
+                )}
+            </div>
           </main>
         </div>
       </Layout>

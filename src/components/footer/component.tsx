@@ -2,21 +2,22 @@ import Link from "next/link";
 import { memo } from "react";
 import { FaLinkedin } from "react-icons/fa";
 
-const Footer = (): React.ReactElement => {
+const Footer = (): React.ReactElement<any> => {
   return (
     <footer className="flex flex-col justify-center items-center py-4 space-y-2">
       <div>
         <Link
-          className="text-gray-900 dark:text-gray-50"
+          className="section-list-link inline-flex items-center gap-2 text-black dark:text-white"
           href="https://www.linkedin.com/in/arthurwhenry/"
           target="_blank"
-          rel="noopenner noreferrer"
+          rel="noopener noreferrer"
         >
-          <FaLinkedin className="h-5 w-5" />
+          <FaLinkedin className="h-5 w-5" aria-hidden="true" />
+          <span>Connect on LinkedIn</span>
         </Link>
       </div>
       <div>
-        <p className="text-sm dark:text-gray-200 text-gray-900">
+        <p className="text-sm dark:text-white text-black">
           Made by Arthur Henry
         </p>
       </div>

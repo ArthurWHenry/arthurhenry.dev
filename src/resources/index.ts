@@ -22,31 +22,3 @@ export const recommendations: RecommendationProps[] = [
     ],
   },
 ];
-
-export const songs = [
-  {
-    name: "Yo Sigo Igual by Bad Gyal (feat. Fakeguido & El Guincho)",
-    iframe:
-      "https://open.spotify.com/embed/track/25RN6owXD29BH7fu2vlz3q?utm_source=generator",
-  },
-  {
-    name: "SEMPRE / JAMAIS by Mahmood, Angèle",
-    iframe:
-      "https://open.spotify.com/embed/track/5cQ7nEhyl1fTn5e4jbqaBY?utm_source=generator",
-  },
-  {
-    name: "TUTA GOLD by Mahmood",
-    iframe:
-      "https://open.spotify.com/embed/track/654Jxp6rUFgPckixlIusRJ?utm_source=generator",
-  },
-  {
-    name: "Illusion by Dua Lipa",
-    iframe:
-      "https://open.spotify.com/embed/track/59xD5osEFsaNt5PXfIKUnX?utm_source=generator",
-  },
-  {
-    name: "Saint-Germain by Emma Hoet",
-    iframe:
-      "https://open.spotify.com/embed/track/0xjRkSgHG8A14Z2q5TdEiy?utm_source=generator",
-  },
-];

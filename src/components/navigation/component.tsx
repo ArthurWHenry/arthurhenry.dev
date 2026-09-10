@@ -21,24 +21,25 @@ const links = [
     href: "https://github.com/ArthurWHenry",
     icon: <HiExternalLink />,
     target: "_blank",
-    text: "Github",
+    text: "GitHub",
   },
 ];
 
-const Navigation = (): React.ReactElement => {
+const Navigation = (): React.ReactElement<any> => {
   const router = useRouter();
 
   return (
-    <nav className="flex justify-between py-1">
-      <div className="flex justify-start space-x-4">
+    <nav aria-label="Main navigation" className="py-1">
+      <div className="flex flex-wrap gap-x-4 gap-y-2">
         {links.map(({ href, icon, target, text }, idx) => (
           <Link
             className={classNames(
               router.pathname === href
-                ? "text-gray-900 dark:text-gray-50 border-b-2 border-gray-900 dark:border-gray-50"
-                : "text-gray-600 dark:text-gray-400",
-              " hover:text-gray-900 dark:hover:text-gray-50 duration-150 transition flex items-center space-x-1",
+                ? "border-black dark:border-white"
+                : "border-transparent hover:border-black dark:hover:border-white",
+              "border-b-2 text-black dark:text-white transition-colors duration-150 motion-reduce:transition-none flex items-center space-x-1 py-1",
             )}
+            aria-current={router.pathname === href ? "page" : undefined}
             href={href}
             key={idx}
             target={target ? target : "_self"}
